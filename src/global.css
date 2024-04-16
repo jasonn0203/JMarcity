@@ -2,6 +2,11 @@
 :root {
   --main-dark: #0f0f0f;
   --primary: #90d26d;
+  --primary-op_5: rgba(144, 210, 109, 0.75);
+  --main-dark-op: rgba(15, 15, 15, 0.95);
+}
+.bg-main-dark {
+  background-color: var(--main-dark-op);
 }
 
 .highlight-text {
@@ -18,7 +23,66 @@
   object-fit: cover;
 }
 .banner-small {
-  max-width: 350px;
+  min-width: 50%;
   height: auto;
   object-fit: cover;
+}
+
+.med-list-img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.med-card {
+  padding: 0.75rem;
+  background-color: white;
+  height: inherit;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 4px solid transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+}
+.med-card:hover {
+  border: 4px solid;
+  border-color: var(--primary);
+}
+.med-card-text {
+  font-size: 14px;
+  font-weight: 600;
+  height: 60px;
+  line-height: 20px;
+}
+.main-truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.med-card-price {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.trending-med-section {
+  position: relative;
+  margin-block: 100px;
+}
+
+.ribbon {
+  background-color: var(--primary);
+  padding: 4px;
+  width: fit-content;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
