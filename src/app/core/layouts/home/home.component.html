@@ -10,47 +10,13 @@
         <div class="ribbon text-black">
             <p><b>Trending Medicine</b></p>
         </div>
-        <div class=" row gx-3 justify-content-center py-4">
-            <div class="col-lg-2 col-md-6">
-                <div class="med-card rounded-3">
-                    <div class="med-list-img d-flex justify-content-center align-items-center my-2 ">
-                        <img class="w-100 rounded-3"
-                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/128x128/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09335_24b9811179.jpg"
-                            alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="med-card-text main-truncate">
-                            Viên sủi Kudos Daily Vitamins Plus Biotin & Ginseng hương cam giúp bổ sung vitamin cho cơ
-                            thể (20 viên)
-                        </p>
+        <div class=" row  py-4 justify-content-center">
 
-                        <p class="med-card-price">
-                            {{101.200 | vndCurrency}} / <span>Tuýp</span>
-                        </p>
-                    </div>
-                </div>
-
+            <div *ngFor="let card of [].constructor(12)" class="col-xl-2 col-lg-3 col-md-4 px-0">
+                <app-med-card></app-med-card>
             </div>
 
-            <div class="col-lg-2 col-md-6">
 
-            </div>
-
-            <div class="col-lg-2 col-md-6">
-
-            </div>
-
-            <div class="col-lg-2 col-md-6">
-
-            </div>
-
-            <div class="col-lg-2 col-md-6">
-
-            </div>
-
-            <div class="col-lg-2 col-md-6">
-
-            </div>
 
         </div>
     </div>
