@@ -11,13 +11,7 @@
         </button>
         <div class="collapse navbar-collapse align-items-center" id="jmarcityNavbar">
             <div class="input-group flex-column-reverse gap-2" style="width: 60%;">
-                <div class="form-helper mb-2 d-lg-block d-none">
-                    <span class="highlight-text me-2">Gợi ý:</span>
-                    <a href="#!" class="text-white-50">Sách,</a>
-                    <a href="#!" class="text-white-50">iphone 15,</a>
-                    <a href="#!" class="text-white-50">bình nước,</a>
-                    <a href="#!" class="text-white-50">bàn chải,</a>
-                </div>
+
                 <form class=" form-outline flex-fill">
                     <div class="d-flex gap-2">
                         <input type="search" id="searchForm" class="form-control form-control-lg "
@@ -36,84 +30,12 @@
                     <a class="nav-link active main-hover" aria-current="page" href="#">Trang chủ</a>
                 </li>
 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                    <li class="nav-item text-white">
-                        <button class="nav-link main-hover" type="button" data-bs-toggle="modal"
-                            data-bs-target="#categoriesModal">
-                            Danh Mục
-                        </button>
-                    </li>
-
-                    <!-- Modal -->
-                    <div class="modal fade" data-backdrop="false" id="categoriesModal" tabindex="-1"
-                        aria-labelledby="categoriesModal" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content bg-dark text-white">
-                                <div class="modal-header highlight-text fw-bolder  ">
-                                    <h5 class="modal-title text-uppercase text-center" id="categoriesModalLabel">Danh
-                                        Mục
-                                    </h5>
-                                    <button type="button" class="btn-close highlight-text" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div *ngFor="let card of [].constructor(12)"
-                                                class="col-lg-3 col-md-4 my-1 me-auto">
-                                                <div class="med-cate-item"> <i
-                                                        class="bi bi-heart-pulse highlight-text fw-bolder"></i>
-                                                    <p class="fw-bold">Medicine</p>
-                                                    <span class="badge highlight-text bg-dark">20 sản phẩm</span>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
+                <!-- Med categories modal -->
+                <app-med-categories></app-med-categories>
 
 
-
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Tài khoản
-                    </a>
-
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-
-                        <li><a class="dropdown-item" href="">Đăng nhập tài khoản</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                    </ul>
-
-
-                </li> -->
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle dropdown-center" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        abc
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item">Xin chào abc !</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="">Quản lý chung</a></li>
-                        <li><a class="dropdown-item" href="#">Chăm sóc khách hàng</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="">Đăng xuất</a></li>
-                    </ul>
-                </li>
+                <!-- User options -->
+                <app-user-options></app-user-options>
             </ul>
         </div>
     </div>

@@ -131,3 +131,32 @@ input:focus {
 .modal-header {
   border-bottom: 1px solid var(--primary) !important;
 }
+.dropdown-item {
+  transition: all 0.3s ease-in-out;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: var(--primary) !important;
+}
+.margin-block {
+  margin-block: 30px;
+}
+.name-size {
+  font-size: 24px;
+}
+.tb-content-list {
+  width: 100%;
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+.tb-content-list .tb-content-container {
+  display: flex;
+  margin-bottom: 16px;
+}
+.tb-conten-row {
+  max-width: 155px;
+  width: 100%;
+  margin-right: 16px;
+}

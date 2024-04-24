@@ -7,6 +7,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { VndCurrencyPipe } from './pipes/vnd-currency/vnd-currency.pipe';
 import { MedCardComponent } from './components/med-card/med-card.component';
+import { MedCategoriesComponent } from './components/med-categories/med-categories.component';
+import UserOptionsComponent from './components/user-options/user-options.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { MedCardComponent } from './components/med-card/med-card.component';
     BannerComponent,
     VndCurrencyPipe,
     MedCardComponent,
+    MedCategoriesComponent,
+    UserOptionsComponent,
   ],
 
   imports: [CommonModule, FormsModule],
@@ -26,6 +30,8 @@ import { MedCardComponent } from './components/med-card/med-card.component';
     BannerComponent,
     VndCurrencyPipe,
     MedCardComponent,
+    MedCategoriesComponent,
+    UserOptionsComponent,
   ],
 })
 export class SharedModule {}

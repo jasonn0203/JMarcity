@@ -1,0 +1,38 @@
+<ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+    <li class="nav-item ">
+        <button class="nav-link main-hover text-white" type="button" data-bs-toggle="modal"
+            data-bs-target="#categoriesModal">
+            Danh Mục
+        </button>
+    </li>
+
+    <!-- Modal -->
+    <div class="modal fade" data-backdrop="false" id="categoriesModal" tabindex="-1" aria-labelledby="categoriesModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header highlight-text fw-bolder  ">
+                    <h5 class="modal-title text-uppercase text-center" id="categoriesModalLabel">Danh
+                        Mục
+                    </h5>
+                    <button type="button" class="btn-close highlight-text" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div *ngFor="let card of [].constructor(12)" class="col-lg-3 col-md-4 my-1 me-auto">
+                                <div class="med-cate-item"> <i class="bi bi-heart-pulse highlight-text fw-bolder"></i>
+                                    <p class="fw-bold">Medicine</p>
+                                    <span class="badge highlight-text bg-dark">20 sản phẩm</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ul>
